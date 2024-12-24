@@ -35,6 +35,7 @@
         <PackagePath></PackagePath>
         <Link>icon.jpg</Link>
       </None>
+      <None Include="..\..\README.md" Pack="true" PackagePath="contentFiles/any/any/README.md" />
     </ItemGroup>
 
 </Project>
