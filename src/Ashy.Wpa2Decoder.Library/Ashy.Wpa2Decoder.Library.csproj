@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Version>1.1.0</Version>
+        <Title>Ashy.Wpa2Decoder.Library</Title>
+        <Authors>Oleksii Shyrokov Ashy.pro</Authors>
+        <Description>Nuget package with code to parse pcap files, analyze eapol handshake parameters, calculate wpa2 cryptography, test password, generate password dictionary for dictionary attack.</Description>
+        <Copyright>Oleksii Shyrokov Ashy.pro</Copyright>
+        <PackageProjectUrl>https://github.com/AshyPro/Wpa2Decoder.Library</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/AshyPro/Wpa2Decoder.Library/LICENSE</PackageLicenseUrl>
+        <PackageIcon>icon.jpg</PackageIcon>
+        <RepositoryUrl>https://github.com/AshyPro/Wpa2Decoder.Library</RepositoryUrl>
+        <RepositoryType>Class Library</RepositoryType>
+        <PackageTags>wpa2 eapol pcap PTK MIC dictionary</PackageTags>
+        <Company>Ashy.Pro</Company>
+        <Product>Ashy.Wpa2Decoder</Product>
+        <AssemblyVersion>1.1.0</AssemblyVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="LibPacketGremlin" Version="1.2.0" />
+      <PackageReference Include="SharpPcap" Version="6.3.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="icon.ico">
+        <Pack>True</Pack>
+        <PackagePath></PackagePath>
+      </None>
+      <None Include="..\..\icon.jpg">
+        <Pack>True</Pack>
+        <PackagePath></PackagePath>
+        <Link>icon.jpg</Link>
+      </None>
+    </ItemGroup>
+
+</Project>
